@@ -8,6 +8,8 @@ cd /root/worker-deploy
 
 echo 'switching to /root'
 
+export SLS_DEBUG=*
+
 sls deploy
 
 
