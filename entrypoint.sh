@@ -10,6 +10,8 @@ echo 'switching to worker directory contents below'
 
 ls
 
+cat serverless.yml
+
 export SLS_DEBUG=*
 
 sls deploy
