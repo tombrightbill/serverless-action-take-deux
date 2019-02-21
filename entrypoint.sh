@@ -8,9 +8,9 @@ echo "currentcontent is"
 
 ls
 
-echo "changing to ${HOME}/${GITHUB_ACTION}"
+echo "changing to ${HOME}/worker-deploy"
 
-mv ${HOME}/${GITHUB_ACTION}
+mv ${HOME}/worker-deploy
 
 echo "listing contents of this direction"
 

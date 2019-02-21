@@ -6,10 +6,8 @@ LABEL "com.github.actions.icon"="cloud"
 LABEL "com.github.actions.color"="orange"
 
 RUN yarn global add serverless 
-RUN echo $HOME &&\
-	echo $GITHUB_ACTION &&\
-	serverless create --template cloudflare-workers --path ${HOME}/${GITHUB_ACTION} &&\
-    cd ${HOME}/${GITHUB_ACTION} &&\
+RUN serverless create --template cloudflare-workers --path ${HOME}/worker-deploy &&\
+    cd ${HOME}/worker-deploy &&\
     serverless plugin install --name serverless-cloudflare-workers &&\
     rm -rf helloWorld.js
 
