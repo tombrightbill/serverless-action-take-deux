@@ -10,9 +10,10 @@ RUN mkdir -p /$HOME/worker-deploy &&\
 	cd $HOME/worker-deploy &&\
 	serverless create --template cloudflare-workers &&\
     serverless plugin install --name serverless-cloudflare-workers &&\
-    rm -rf helloWorld.js
+    rm -rf helloWorld.js &&\
+    rm -rf serverless.yml
 
-COPY serverless.yml /$HOME/worker-deploy
+ADD serverless.yml /$HOME/worker-deploy
 
 ADD entrypoint.sh /entrypoint.sh
 
