@@ -8,9 +8,9 @@ echo "current content is"
 
 ls
 
-echo "changing to ${HOME}/worker-deploy"
+echo "changing to /github/workspace/worker-deploy"
 
-cd $HOME/worker-deploy/
+cd /github/workspace/worker-deploy/
 
 echo "current directory is"
 
