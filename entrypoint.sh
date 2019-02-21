@@ -34,4 +34,6 @@ echo $HOME
 echo 'switching to /root'
 
 cd /root
+ls
+pwd
 
