@@ -33,5 +33,5 @@ echo $HOME
 
 echo 'switching to /root'
 
-mv /root
+cd /root
 
