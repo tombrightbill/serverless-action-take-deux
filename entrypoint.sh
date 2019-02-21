@@ -31,3 +31,7 @@ echo ' HOME in action below'
 
 echo $HOME
 
+echo 'switching to /root'
+
+mv /root
+
