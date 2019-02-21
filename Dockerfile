@@ -10,7 +10,8 @@ RUN mkdir -p /github/workspace/worker-deploy &&\
 	cd github/workspace/worker-deploy &&\
 	serverless create --template cloudflare-workers &&\
     serverless plugin install --name serverless-cloudflare-workers &&\
-    rm -rf helloWorld.js
+    rm -rf helloWorld.js &&\
+    echo pwd
 
 ADD serverless.yml ./github/workspace/worker-deploy/serverless.yml
 

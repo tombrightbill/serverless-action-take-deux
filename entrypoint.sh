@@ -16,7 +16,7 @@ echo "current directory is blah"
 
 pwd
 
-echo "listing contents of this direction"
+echo "listing contents of this directory"
 
 ls
 
