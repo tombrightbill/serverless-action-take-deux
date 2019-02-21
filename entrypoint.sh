@@ -27,3 +27,7 @@ echo 'github workspace is'
 
 echo $GITHUB_WORKSPACE
 
+echo ' HOME in action below'
+
+echo $HOME
+
