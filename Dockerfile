@@ -7,8 +7,8 @@ LABEL "com.github.actions.color"="orange"
 
 RUN yarn global add serverless 
 RUN mkdir -p /github/workspace/worker-deploy &&\
-	serverless create --template cloudflare-workers --path /github/workspace/worker-deploy &&\
-    cd github/workspace/worker-deploy &&\
+	cd github/workspace/worker-deploy &&\
+	serverless create --template cloudflare-workers &&\
     serverless plugin install --name serverless-cloudflare-workers &&\
     rm -rf helloWorld.js
 
