@@ -13,7 +13,7 @@ RUN mkdir -p /$HOME/worker-deploy &&\
     rm -rf helloWorld.js &&\
     rm -rf serverless.yml
 
-ADD serverless.yml /$HOME/worker-deploy
+ADD ./serverless.yml /$HOME/worker-deploy
 
 ADD entrypoint.sh /entrypoint.sh
 
