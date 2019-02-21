@@ -5,8 +5,8 @@ LABEL "com.github.actions.description"="Deploy a Worker with the Serverless Fram
 LABEL "com.github.actions.icon"="cloud"
 LABEL "com.github.actions.color"="orange"
 
-RUN yarn global add serverless 
-RUN mkdir -p /$HOME/worker-deploy &&\
+RUN yarn global add serverless  &&\
+	mkdir -p /$HOME/worker-deploy &&\
 	cd $HOME/worker-deploy &&\
 	serverless create --template cloudflare-workers &&\
     serverless plugin install --name serverless-cloudflare-workers &&\
