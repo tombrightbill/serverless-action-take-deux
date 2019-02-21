@@ -12,7 +12,7 @@ echo "changing to /github/workspace/worker-deploy"
 
 cd /github/workspace/worker-deploy/
 
-echo "current directory is"
+echo "current directory is blah"
 
 pwd
 
