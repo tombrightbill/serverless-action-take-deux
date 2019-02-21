@@ -4,9 +4,6 @@ service:
       accountId: ${env:CLOUDFLARE_ACCOUNT_ID}
       zoneId: ${env:CLOUDFLARE_ZONE_ID}
 
-custom:
-  scriptName: ${env:CLOUDFLARE_SCRIPT_NAME}
-
 provider:
   name: cloudflare
 
@@ -14,7 +11,7 @@ plugins:
   - serverless-cloudflare-workers
   
 functions:
-  `${self:scriptName}`:
-    name: script
+  worker-deploy:
+    name: ${env:CLOUDFLARE_SCRIPT_NAME}
     script: ${env:CLOUDFLARE_SCRIPT_NAME} 
 
