@@ -10,7 +10,7 @@ ls
 
 echo "changing to ${HOME}/worker-deploy"
 
-mv root/worker-deploy/
+cd root/worker-deploy/
 
 echo "current directory is"
 
