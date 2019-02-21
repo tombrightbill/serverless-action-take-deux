@@ -4,7 +4,7 @@ echo "current directory is"
 
 pwd
 
-echo "currentcontent is"
+echo "current content is"
 
 ls
 
