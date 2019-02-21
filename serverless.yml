@@ -11,7 +11,7 @@ plugins:
   - serverless-cloudflare-workers
   
 functions:
-  ${env:CLOUDFLARE_SCRIPT_NAME}:
-    name: ${env:CLOUDFLARE_SCRIPT_NAME}
+  script:
+    name: script
     script: ${env:CLOUDFLARE_SCRIPT_NAME} 
 
