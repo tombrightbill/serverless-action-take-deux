@@ -6,7 +6,12 @@ LABEL "com.github.actions.icon"="cloud"
 LABEL "com.github.actions.color"="orange"
 
 RUN yarn global add serverless 
+RUN mkdir worker-deploy &&\
+    cd worker-deploy &&\
+    serverless create --template cloudflare-workers &&\
+    serverless plugin install --name serverless-cloudflare-workers &&\
+    rm -rf helloWorld.js
 
-ADD entrypoint.sh /entrypoint.sh
+COPY serverless.yml ./worker-deploy/serverless.yml
 
-ENTRYPOINT ["/entrypoint.sh"]
+
