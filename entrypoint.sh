@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo 'I am'
+whoami
+
 echo "current directory is"
 
 pwd
@@ -19,4 +22,8 @@ pwd
 echo "listing contents of this directory"
 
 ls
+
+echo 'github workspace is'
+
+echo $GITHUB_WORKSPACE
 

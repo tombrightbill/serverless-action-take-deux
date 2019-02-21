@@ -13,7 +13,7 @@ RUN mkdir -p /github/workspace/worker-deploy &&\
     rm -rf helloWorld.js &&\
     echo pwd
 
-ADD serverless.yml ./github/workspace/worker-deploy/serverless.yml
+ADD serverless.yml /github/workspace/worker-deploy/serverless.yml
 
 ADD entrypoint.sh /entrypoint.sh
 
