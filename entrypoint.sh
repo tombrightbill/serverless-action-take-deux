@@ -1,16 +1,18 @@
 #!/bin/bash
 
-mkdir deploy-worker
+echo "current directory is"
 
-cd deploy-worker
+pwd
 
-serverless create --template cloudflare-workers 
+echo "currentcontent is"
 
-serverless plugin install --name serverless-cloudflare-workers
+ls
 
-rm -rf helloWorld.js
+echo "changing to ${HOME}/${GITHUB_ACTION}"
 
-mv $GITHUB_WORKSPACE/*.{yml,js} $GITHUB_WORKSPACE/deploy-worker/
+mv ${HOME}/${GITHUB_ACTION}
 
-sls deploy
+echo "listing contents of this direction"
+
+ls
 

@@ -11,7 +11,7 @@ RUN serverless create --template cloudflare-workers --path ${HOME}/${GITHUB_ACTI
     serverless plugin install --name serverless-cloudflare-workers &&\
     rm -rf helloWorld.js
 
-COPY serverless.yml ./worker-deploy/serverless.yml
+COPY serverless.yml ./${HOME}/${GITHUB_ACTION}/serverless.yml
 
 ADD entrypoint.sh /entrypoint.sh
 
