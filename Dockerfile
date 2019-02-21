@@ -6,18 +6,13 @@ LABEL "com.github.actions.icon"="cloud"
 LABEL "com.github.actions.color"="orange"
 
 RUN yarn global add serverless 
-RUN mkdir -p /root/worker-deploy &&\
-	echo $HOME &&\
-	echo $HOME &&\
-	echo "home should be above" &&\
-	cd root/worker-deploy &&\
-	echo "PWD" &&\
+RUN mkdir -p /$HOME/worker-deploy &&\
+	cd $HOME/worker-deploy &&\
 	serverless create --template cloudflare-workers &&\
     serverless plugin install --name serverless-cloudflare-workers &&\
-    rm -rf helloWorld.js &&\
-    echo $HOME
+    rm -rf helloWorld.js
 
-ADD serverless.yml /root/worker-deploy/serverless.yml
+ADD serverless.yml /$HOME/worker-deploy/serverless.yml
 
 ADD entrypoint.sh /entrypoint.sh
 
