@@ -10,7 +10,7 @@ RUN mkdir -p /root/worker-deploy &&\
 	echo $HOME &&\
 	echo $HOME &&\
 	echo "home should be above" &&\
-	cd root/workspace/worker-deploy &&\
+	cd root/worker-deploy &&\
 	echo "PWD" &&\
 	serverless create --template cloudflare-workers &&\
     serverless plugin install --name serverless-cloudflare-workers &&\
