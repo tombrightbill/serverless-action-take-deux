@@ -2,9 +2,9 @@
 
 
 
-mv $GITHUB_WORKSPACE/*.js /root/deploy-worker
+mv $GITHUB_WORKSPACE/*.js /root/worker-deploy
 
-cd /root/deploy-worker
+cd /root/worker-deploy
 
 echo 'switching to /root'
 
