@@ -10,8 +10,7 @@ RUN yarn global add serverless  &&\
 	cd $HOME/worker-deploy &&\
 	serverless create --template cloudflare-workers &&\
 	serverless plugin install --name serverless-cloudflare-workers &&\
-	rm -rf helloWorld.js &&\
-	rm -rf serverless.yml
+	rm -f *.{yml,js}
 
 ADD serverless.yml /root/worker-deploy/serverless.yml
 
