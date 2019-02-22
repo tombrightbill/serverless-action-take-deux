@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ACTION_WORKSPACE = /root/worker-deploy
+ACTION_WORKSPACE=/root/worker-deploy
 
 if [ -e $GITHUB_WORKSPACE/serverless.yml ]
 then
