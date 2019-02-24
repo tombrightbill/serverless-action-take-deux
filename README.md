@@ -2,11 +2,11 @@
 
 If you are new to GitHub actions please see the official guide [here](https://help.github.com/articles/creating-a-workflow-with-github-actions/).
 
-To use this action you must provide a Worker script (i.e. worker-script.js) in your repo attached to this action as well as the appropriate environmental variables.
+To use this action you must provide a Worker script (i.e. `worker-script.js`) in your repo attached to this action as well as the appropriate environmental variables.
 
 <b>File Structure</b>
 
-Your repo must include the CF Worker script to be deployed and an optional serverless.yml file. If you do not include a ```serverless.yml``` file then the action will assume some smart defaults to deploy the worker based on the ENV variables you pass.
+Your repo must include the CF Worker script to be deployed and an optional `serverless.yml file`. If you do not include a `serverless.yml` file then the action will assume some smart defaults to deploy the worker based on the ENV variables you pass. Any included `serverless.yml` must exist in the root of your repo along with your worker script.
 
 <b>Environmental Variables </b>
 
