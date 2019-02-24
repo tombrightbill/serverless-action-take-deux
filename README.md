@@ -1,4 +1,4 @@
-Github Action to Deploy a Cloudflare Worker with the Serverless Framework.
+<b> Github Action to Deploy a Cloudflare Worker with the Serverless Framework </b>
 
 If you are new to GitHub actions please see the official guide [here](https://help.github.com/articles/creating-a-workflow-with-github-actions/).
 
